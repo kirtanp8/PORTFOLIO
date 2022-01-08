@@ -1,0 +1,93 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "nav";
+@import "intro";
+@import "hobbies";
+@import "about";
+@import "contact";
+@import "skills";
+@import "projects";
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  background-color: #8ee4af;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+}
+
+// body {
+//   height: 100vh;
+// }
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #379683;
+  overflow: scroll;
+  color: #edf5e1;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+  color: #05386b;
+  text-align: center;
+}
+
+.take-space {
+  height: 4px;
+}
+
+section {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  scroll-snap-align: center;
+  background-color: #379683;
+  /* Scroll Snap */
+  scroll-snap-align: center;
+  p {
+    font-size: 1.2rem;
+    color: #edf5e1;
+  }
+}
+
+footer {
+  background-color: #edf5e1;
+  color: #379683;
+  font-size: 1.2rem;
+  height: 100%;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  /* CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+@media screen and (max-width: 300px) and (max-height: 540px) {
+  section {
+    height: 100%;
+  }
+}

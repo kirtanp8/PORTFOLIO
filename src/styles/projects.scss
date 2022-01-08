@@ -1,0 +1,219 @@
+#projects {
+  height: 100%;
+  .projects-elements {
+    margin: auto;
+    .cards-div {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60%;
+      li {
+        list-style: none;
+        margin: 6px auto;
+        .card-div {
+          display: flex;
+          background-color: #8ee4af;
+          color: #379683;
+          margin: 4px 4px;
+          box-shadow: 2px 2px #edf5e1;
+          .picture-div {
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            box-shadow: 2px 2px #edf5e1;
+          }
+          .body-div {
+            width: 49%;
+            height: 95%;
+            text-align: center;
+            h5 {
+              font-size: 1.6rem;
+              color: #05386b;
+            }
+            .logos {
+              display: flex;
+              flex-wrap: wrap;
+              margin: 1% 5px;
+              justify-content: center;
+              div {
+                margin: 0% 1%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.project-buttons {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
+  #button-for-project {
+    min-width: 150px;
+  }
+}
+
+.take-space-projects {
+  height: 8vh;
+}
+
+#Burnt,
+#Pokemon {
+  flex-direction: row-reverse;
+}
+
+#Spirits,
+#MontanNews {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1720px) {
+  #Spirits,
+  #MontanNews,
+  #Burnt,
+  #Pokemon {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #projects {
+    .projects-elements {
+      .cards-div {
+        li {
+          .card-div {
+            .picture-div {
+              width: 70%;
+            }
+            .body-div {
+              width: 98%;
+              h5 {
+              }
+              .logos {
+                div {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #Spirits,
+  #MontanNews,
+  #Burnt,
+  #Pokemon {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #projects {
+    .projects-elements {
+      .cards-div {
+        width: 90%;
+        li {
+          .card-div {
+            .picture-div {
+              width: 70%;
+            }
+            .body-div {
+              width: 98%;
+              h5 {
+              }
+              .logos {
+                div {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #Spirits,
+  #MontanNews,
+  #Burnt,
+  #Pokemon {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #projects {
+    .projects-elements {
+      .cards-div {
+        width: 90%;
+        li {
+          .card-div {
+            .picture-div {
+              width: 70%;
+            }
+            .body-div {
+              width: 98%;
+              h5 {
+              }
+              .logos {
+                div {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .project-buttons {
+    flex-direction: column;
+    #button-for-project {
+      margin: 3%;
+      min-width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #Spirits,
+  #MontanNews,
+  #Burnt,
+  #Pokemon {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #projects {
+    .projects-elements {
+      .cards-div {
+        margin: auto;
+        li {
+          .card-div {
+            margin: auto;
+            .picture-div {
+              width: 70%;
+            }
+            .body-div {
+              width: 98%;
+              h5 {
+              }
+              .logos {
+                div {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .project-buttons {
+    flex-direction: column;
+    #button-for-project {
+      margin: 1% auto;
+      min-width: 150px;
+      width: 200px;
+    }
+  }
+}
