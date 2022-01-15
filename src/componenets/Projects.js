@@ -16,7 +16,7 @@ import Yarn from '../icons/yarn.png'
 import NPM from '../icons/npm.png'
 import Pokemon from '../icons/PokemonInvaders.png'
 import BurntToastImage from '../icons/BurntToast.png'
-import MontanNewsImage from '../icons/MontanNews.png'
+import MontanNewsImage from '../icons/montannews.png'
 import SpiritsOClock from '../icons/SpiritsOclock.png'
 import { Card, Button } from 'react-bootstrap'
 
@@ -24,7 +24,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Spirits O\'Clock',
-      description: 'Dictumst justo etiam faucibus taciti. Sapien mattis ridiculus fermentum pede mus placerat eu. Ullamcorper rutrum est cubilia proin rhoncus fringilla enim, rhoncus aliquet sociis laoreet. Commodo. Amet odio sociosqu sociis faucibus praesent bibendum. Nascetur sociis lectus nunc velit, ligula vel proin erat libero consectetuer egestas turpis, leo.', 
+      description: 'A cocktail recipe website where users can rate, review, share, view, save and edit cocktail recipes. After, building a full stack application as a group for Project 3, I wanted to test my skills and see how I could perform alone.', 
       thumbnail: SpiritsOClock,
       url: 'https://spiritsoclock2021.herokuapp.com/',
       github: 'https://github.com/kirtanp8/SPIRITSO-CLOCK-PROJECT4',
@@ -57,7 +57,7 @@ const Projects = () => {
     },
     {
       title: 'Burnt Toast',
-      description: 'Dictumst justo etiam faucibus taciti. Sapien mattis ridiculus fermentum pede mus placerat eu. Ullamcorper rutrum est cubilia proin rhoncus fringilla enim, rhoncus aliquet sociis laoreet. Commodo. Amet odio sociosqu sociis faucibus praesent bibendum. Nascetur sociis lectus nunc velit, ligula vel proin erat libero consectetuer egestas turpis, leo.', 
+      description: 'A MERN full stack application where we aimed to clone Rotten Tomatoes with our own style. Most  of  the  work  was  a  team  effort,  however,  something  cool  and  new  to  me  that  I  had  worked  on individually was the implementation of the search bar.', 
       thumbnail: BurntToastImage,
       url: 'burnt-toast-ga.herokuapp.com',
       github: 'https://github.com/kirtanp8/BURNT-TOAST-PROJECT3',
@@ -94,7 +94,7 @@ const Projects = () => {
     },
     {
       title: 'MontanNews',
-      description: 'Dictumst justo etiam faucibus taciti. Sapien mattis ridiculus fermentum pede mus placerat eu. Ullamcorper rutrum est cubilia proin rhoncus fringilla enim, rhoncus aliquet sociis laoreet. Commodo. Amet odio sociosqu sociis faucibus praesent bibendum. Nascetur sociis lectus nunc velit, ligula vel proin erat libero consectetuer egestas turpis, leo.',
+      description: 'As a pair-programming duo we created a news website using our newly learned React skills retrieving data from a news based API. We worked on almost everything together as a team using the VSCode Liveshare feature.',
       thumbnail: MontanNewsImage,
       url: 'https://montannews2021.netlify.app/',
       github: 'https://github.com/kirtanp8/NEWS-API-PROJECT2',
@@ -119,7 +119,7 @@ const Projects = () => {
     },
     {
       title: 'Pokemon Space Invaders',
-      description: 'Dictumst justo etiam faucibus taciti. Sapien mattis ridiculus fermentum pede mus placerat eu. Ullamcorper rutrum est cubilia proin rhoncus fringilla enim, rhoncus aliquet sociis laoreet. Commodo. Amet odio sociosqu sociis faucibus praesent bibendum. Nascetur sociis lectus nunc velit, ligula vel proin erat libero consectetuer egestas turpis, leo.',
+      description: 'A Pokemon themed space invaders fuelled by vanilla JavaScript. I feel that I could have improved the design and added a leaderboard, but overall I am very pleased with how I did.',
       thumbnail: Pokemon,
       url: 'https://kirtanp8.github.io/Pokemon-Space-Invaders-PROJECT1/',
       github: 'https://github.com/kirtanp8/Pokemon-Space-Invaders-PROJECT1',
@@ -145,6 +145,7 @@ const Projects = () => {
       <div className='take-space-projects'></div>
       <div className='projects-elements'>
       <h1>My Projects</h1>
+      <p>Coming Soon: <span className='side-project-text'>Messaging App, E-Commerce Site.</span></p>
       <ul className='cards-div'>
         {projects.map((project, index) => (
           <li key={index}>  
@@ -164,7 +165,7 @@ const Projects = () => {
                 {project.logos.map((logo, index) => (
                   <div>
                   <img src={logo.image} />
-                  <p>{logo.name}</p>
+                  <p className='logo-text'>{logo.name}</p>
                   </div>
                 ))}
               </div>

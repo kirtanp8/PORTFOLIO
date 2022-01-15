@@ -86,7 +86,7 @@ const Skills = () => {
   return (
     <section id='skills' className='skills-section'>
       <div className='skills-elements'>
-      <h1>Technologies & Skills</h1>
+      <h1>Languages and Frameworks</h1>
       <ul className='skills-icons'>
       {technologies.map((lang, index) => (
         <li className={lang.name} key={index}>
